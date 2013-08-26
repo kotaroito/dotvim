@@ -1,0 +1,5 @@
+snippet     dumper
+        use Data::Dumper; warn Dumper(${1:code});
+
+snippet     querylog
+        require DBIx::QueryLog; my $guard = DBIx::QueryLog->guard();
